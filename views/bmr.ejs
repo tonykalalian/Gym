@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <script defer src="/your-path-to-fontawesome/js/v4-shims.js"></script>
+
+    <!-- =============== CSS =============== -->
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <title>BMR Calculator</title>
+
+    <!-- =============== FAVICON =============== -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/icons8-gym-ios-16-glyph-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/icons8-gym-ios-16-glyph-16.png"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/calculate.css" />
+
+  </head>
+  <body>
+    <!-- = = = = = = = = = = = = = = = HEADER = = = = = = = = = = = = = = = -->
+    <header class="header" id="header">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+      <nav class="nav container">
+        <a href="home.html" class="nav__logo">Be<span id="bold">FIT</span></a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link active-link">BMR</a>
+            </li>
+            <li class="nav__item">
+              <a href="plans" class="nav__link">Plans</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Products</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Our team</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/" class="nav__link"
+                ><i class="fa fa-sign-out-alt" aria-hidden="true"></i
+              ></a>
+            </li>
+            <i
+              class="bx bx-toggle-left change-theme size"
+              id="theme-button"
+            ></i>
+          </ul>
+        </div>
+        <!-- button button__header -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- BMR Calculator Section -->
+    <section id="bmr-section">
+      <div class="bmr-calculator">
+        <h2>BMR Calculator</h2>
+        <div class="controls">
+          <form>
+            <h3>Age (10 - 100)</h3>
+            <input type="text" id="age" value="28" />
+  
+            <div class="gender">
+              <h3>Gender</h3>
+              <input type="radio" id="male" value="male" name="gender" checked />
+              <label for="male">Male</label>
+              <input type="radio" id="female" value="female" name="gender" />
+              <label for="female">Female</label>
+            </div>
+  
+            <div class="height">
+              <h3>Height</h3>
+              <input type="text" id="height" value="180" />
+              <div class="unit">cm</div>
+            </div>
+  
+            <div class="weight">
+              <h3>Weight</h3>
+              <input type="text" id="weight" value="65" />
+              <div class="unit">kg</div>
+            </div>
+          </form>
+        </div>
+  
+        <div class="result">
+          <button class="calculate-btn">Calculate</button>
+  
+          <div class="result-message">
+            <span class="calories">1,640</span> Calories/day
+          </div>
+  
+          <div class="error-message">
+            <p>Please enter all the details correctly.</p>
+          </div>
+        </div>
+      </div>
+  
+    </section>
+ 
+
+    <section id="nutrifacts">
+      <h1 class="nutri-title">Be-Fit Calorie Tracking system</h1>
+
+      <div class="containerx">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Add Meal / Food item</span>
+            <form class="col">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input type="text" placeholder="Item" id="item-name" />
+                </div>
+                <div class="input-field col s6">
+                  <input
+                    type="number"
+                    placeholder="Calories"
+                    id="item-calories"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <button class="btn add-btn blue darken-3">
+                  <i class="fa fa-plus"></i> Add Meal
+                </button>
+                <button class="btn update-btn orange">Update Meal</button>
+                <button class="btn delete-btn red">Delete Meal</button>
+                <button class="btn back-btn grey pull-right">
+                  <i class="fa fa-chevron-circle-left"></i> Back
+                </button>
+                <button
+                  class="clear-btn btn red lighten-1 btn back-btn grey pull-right"
+                >
+                  <i class="fas fa-trash"></i> Delete All
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Calories count -->
+        <h3 class="center-align">
+          Total calories: <span class="total-calories">0</span>
+        </h3>
+
+        <!-- Item list -->
+        <ul id="item-list" class="collection"></ul>
+      </div>
+    </section>
+    <section style="margin: 5%;">
+      <h1 style="text-align: center;">Fuel Your Fitness Goals: Discover Nutritional Information with Our Food API</h1>
+   <h2 style="text-align: center;"><a href="/components/food.html" target="_blank" style="color: #00abb3;">Click here</a> To Access our Food API</h2>
+    </section>
+    <hr style="  border:dotted #3c4048 6px;   border-bottom: none;     width: 8%;  margin: 100px auto;">
+    <section style="margin: 5%;">
+      <h1 style="text-align: center;">Generate a diet right now with Auto-Pilot</h1>
+   <h2 style="text-align: center;"><a href="/components/diet.html" target="_blank" style="color: #00abb3;">Click here</a> to get your diet</h2>
+    </section>
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section" id="footer">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <h2 id="footer-motivation">The best way to be healthy</h2>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Our Services</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="" class="footer__link">Support </a>
+            </li>
+            <li><a href="#" class="footer__link">Donate </a></li>
+            <li><a href="#" class="footer__link">Report a bug</a></li>
+            <li><a href="#" class="footer__link">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Our Company</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Blog</a></li>
+            <li><a href="#" class="footer__link">Our mision</a></li>
+            <li><a href="#" class="footer__link">Get in touch</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Community</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Support</a></li>
+            <li>
+              <a href="" class="footer__link">Questions</a>
+            </li>
+            <li><a href="#" class="footer__link">Usage help</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <a href="#" class="footer__social-link"
+            ><i class="bx bxl-facebook-circle"></i
+          ></a>
+          <a href="" class="footer__social-link"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="" class="footer__social-link"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+        </div>
+      </div>
+      <p class="footer__copy">&#169 2023<br>All right reserved</p>
+    </footer>
+     <!--=============== SCROLL UP ===============-->
+     <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+  <script src="js/calculate.js"></script>
+   
+  </body>
+</html>

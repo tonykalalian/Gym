@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chest workout</title>
+
+    <link rel="stylesheet" href="css/exercise.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+      <div class="blog-posts-container">
+    <% posts.forEach(function(post) { %>
+    <div class="post">
+      <a href="<%= post.postLink %>" class="post-link"></a>
+      <div class="thumbnail">
+        <img src="<%= post.thumbUrl %>" alt="" />
+      </div>
+
+      <div class="title-container">
+        <a href="<%= post.categoryLink %>" class="category"><%= post.category %></a>
+        <a href="<%= post.postLink %>">
+          <h2 class="title"><%= post.title %></h2>
+        </a>
+      </div>
+
+      <div class="summary">
+        <%= post.summary %>
+      </div>
+
+      <div class="meta-data">
+        <div class="author">By <%= post.author %></div>
+        <div class="date">on <%= post.datePublished %></div>
+      </div>
+    </div>
+    <% }) %>
+  </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Signup Form</title>
+    <link rel="stylesheet" href="/css/registration.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/icons8-gym-ios-16-glyph-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/icons8-gym-ios-16-glyph-16.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="user signinBox">
+          <div class="imgBox">
+            <img src="/images/sif.png" width="100%" height="100%" alt="" />
+          </div>
+          <div class="formBox">
+            <form action="/api/auth/login" method="POST">
+              <h2>Login</h2>
+
+              <!-- <label for="username">Username:</label> -->
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="username"
+                required
+              />
+
+              <!-- <label for="password">Password:</label> -->
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="password"
+                required
+              />
+
+              <input type="submit" value="Login" />
+              <p class="signup">
+                Don't have an Account?<a
+                  href="#"
+                  onclick="javascript:doToggle();"
+                  >Sign Up</a
+                >
+              </p>
+            </form>
+          </div>
+        </div>
+        <div class="user signupBox">
+          <div class="formBox">
+            <form
+              action="/api/auth/register"
+              method="POST"
+              onsubmit="return handleRegister()"
+            >
+              <h2>Create An Account</h2>
+
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="username"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email"
+                required
+              />
+
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="password"
+                required
+              />
+
+              <input type="submit" value="Register" />
+              <p class="signup">
+                Already have an Account?<a
+                  href="#"
+                  onclick="javascript:doToggle();"
+                  >Login</a
+                >
+              </p>
+            </form>
+          </div>
+
+          <div class="imgBox">
+            <img src="/images/1dbcef30ca20a90b82c60490804de803.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript">
+      function doToggle() {
+        var container = document.querySelector(".container");
+        container.classList.toggle("active");
+      }
+
+      // Check if a message query parameter exists and display the corresponding toast notification
+      var urlParams = new URLSearchParams(window.location.search);
+      var message = urlParams.get("message");
+      if (message) {
+        toastr.success(message);
+      }
+    </script>
+  </body>
+</html>

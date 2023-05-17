@@ -1,0 +1,210 @@
+<%- include("partials/header") -%>
+
+<!--=============== HEADER ===============-->
+<header class="header" id="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  <nav class="nav container">
+    <a href="home" class="nav__logo">Be<span id="bold">FIT</span></a>
+
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link active-link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="bmr" class="nav__link">BMR</a>
+        </li>
+        <li class="nav__item">
+          <a href="plans" class="nav__link">Plans</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Products</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Our team</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="/" class="nav__link"
+            ><i class="fa fa-sign-out-alt" aria-hidden="true"></i
+          ></a>
+        </li>
+        <i class="bx bx-toggle-left change-theme size" id="theme-button"></i>
+      </ul>
+    </div>
+    <!-- button button__header -->
+    <div class="nav__toggle" id="nav-toggle">
+      <i class="bx bx-grid-alt"></i>
+    </div>
+  </nav>
+</header>
+
+<main class="main">
+  <!--=============== HOME ===============-->
+  <section class="home section" id="home">
+    <div class="home__container container grid">
+      <img class="ipad" src="images/home-1.png" alt="" />
+
+      <div class="home__data">
+        <h1 class="home__title">
+          BE-FIT <br />
+          Online Gym Website
+        </h1>
+        <p class="home__description">
+          Motivation is what gets you started. Habit is what keeps you going.
+        </p>
+
+        <a href="#about" class="button">Get Started!</a>
+      </div>
+    </div>
+  </section>
+
+  <!--=============== ABOUT ===============-->
+  <section class="about section container" id="about">
+    <div class="about__container grid">
+      <div class="about__data">
+        <h2 class="section__title-center">
+          <br />
+          About Us
+        </h2>
+        <br />
+        <p class="about__description">
+          Being fit is a neccesity for strong health and it doesn’t suck, get
+          back into it today. Befit has got you covered for your fitness
+        </p>
+      </div>
+
+      <img class="ipad" src="images/43350-removebg-preview.png" alt="" />
+    </div>
+  </section>
+
+  <!--=============== SERVICES ===============-->
+  <section class="services section container" id="services">
+    <div class="services__container grid">
+      <div class="services__data">
+        <h3 class="services__subtitle">Achieve your goals with us.</h3>
+        <clipPath id="clip0">
+          <img src="images/athletic-man-woman-with-dumbbells.jpg" alt="" />
+
+          <rect width="121" height="94" fill="white" />
+        </clipPath>
+        <p class="services__description">
+          Are you looking to achieve your fitness goals without leaving the
+          comfort of your own home? Look no further than our online gym!
+        </p>
+        <div>
+          <a href="#" class="button button-link">Learn More</a>
+        </div>
+      </div>
+
+      <div class="services__data">
+        <h3 class="services__subtitle">Reach your fitness goals online.</h3>
+        <clipPath id="clip0">
+          <img
+            src="images/bodybuilder-training-arm-with-resistance-band.jpg"
+            alt=""
+          />
+
+          <rect width="121" height="94" fill="white" />
+        </clipPath>
+        <p class="services__description">
+          Whether you're looking to build muscle, lose weight, our trainers will
+          work with you to create a personalized plan that meets your specific
+          needs and fits your lifestyle.
+        </p>
+        <div>
+          <a href="#" class="button button-link">Learn More</a>
+        </div>
+      </div>
+
+      <div class="services__data">
+        <h3 class="services__subtitle">Fuel Your Body for Success</h3>
+        <clipPath id="clip0">
+          <img src="images/dumbbells-fitness.jpg" alt="" />
+
+          <rect width="121" height="94" fill="white" />
+        </clipPath>
+        <p class="services__description">
+          At our online gym, we believe that nutrition is just as important as
+          exercise. That's why we provide customized nutrition plans and expert
+          guidance to help you fuel your body for success.
+        </p>
+        <div>
+          <a href="#" class="button button-link">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=============== APP ===============-->
+  <section class="app section container">
+    <div class="app__container grid">
+      <img src="images/GettyImages-step-aerobics-JuanAlgar.jpg" alt="" />
+      <div class="app__data">
+        <h2 class="section__title-center">
+          Choose anywhere <br />
+          At Any Time
+        </h2>
+        <br />
+        <p class="app__description">
+          Ready to take the first step towards a healthier and stronger you?
+          Joining our online gym is the perfect way to start your fitness
+          journey. Our expert trainers, customized workout plans, and
+          personalized nutrition guidance are all designed to help you achieve
+          your fitness goals and transform your body. Plus, with the convenience
+          of working out from anywhere and at any time, you'll never have to
+          worry about fitting exercise into your busy schedule.
+        </p>
+        <div class="app__buttons">
+          <a href="#" class="button button-flex"> Become a member </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=============== CONTACT US ===============-->
+  <section class="contact section container" id="contact">
+    <div class="contact__container grid">
+      <div class="contact__content">
+        <h2 class="section__title-center">
+          Contact US From <br />
+          Here
+        </h2>
+        <br />
+        <p class="contact__description">
+          We'd love to hear from you! Whether you have questions, comments, or
+          just want to say hello, our team is always here to help.
+        </p>
+      </div>
+
+      <ul class="contact__content grid">
+        <li class="contact__address">
+          Telephone:
+          <span class="contact__information"
+            ><br />+96170539108<br />
+            +96171895710
+          </span>
+        </li>
+        <li class="contact__address">
+          Email:
+          <span class="contact__information"
+            ><br />tkalalian@gmail.com<br />
+            mahmoud@gmail.com</span
+          >
+        </li>
+        <li class="contact__address">
+          Location: <span class="contact__information">North-Lebanon</span>
+        </li>
+      </ul>
+
+      <div class="contact__content">
+        <a href="#footer" class="button">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!--=============== FOOTER ===============-->
+<%- include("partials/footer") -%>
