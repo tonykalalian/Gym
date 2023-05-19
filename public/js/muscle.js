@@ -14,7 +14,7 @@ let triceps = document
 let forearms = document
   .getElementById("Forearms")
   .addEventListener("click", () => {
-    window.location.href = "forearms";
+    window.location.href = "forearm";
   });
 let glutes = document.getElementById("Glutes").addEventListener("click", () => {
   window.location.href = "glutes";
@@ -45,7 +45,7 @@ let abs = document.getElementById("Abs").addEventListener("click", () => {
   window.location.href = "abs";
 });
 let quads = document.getElementById("Quads").addEventListener("click", () => {
-  window.location.href = "/exercises/quads.html";
+  window.location.href = "quads";
 });
 let adductors = document
   .getElementById("Adductors")
