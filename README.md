@@ -17,7 +17,7 @@ This is a web application for a fitness blog that provides information and resou
 - MongoDB
 - Mongoose
 - EJS (Embedded JavaScript)
-- HTML/CSS
+- HTML/CSS/JavaScript
 
 ## Getting Started
 
