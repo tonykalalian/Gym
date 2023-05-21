@@ -29,8 +29,8 @@ This is a web application for a fitness blog that provides information and resou
 ### Installation
 
 1. Clone the repository:
+https://github.com/tonykalalian/gym.git
 
-   ```bash
   2. git clone https://github.com/tonykalalian/gym.git
   ### Install dependencies:
 3.  cd fitness-blog
