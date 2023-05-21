@@ -1,4 +1,5 @@
 # Fitness Blog Web Application
+
 This is a web application for a fitness blog that provides information and resources related to various body parts and exercises. Users can view posts related to different body parts, such as chest, abs, biceps, etc., and access fitness plans and tools.
 
 ## Features
@@ -27,21 +28,23 @@ This is a web application for a fitness blog that provides information and resou
 - MongoDB (version X.X.X)
 
 ### Installation
+
 1. Clone the repository:
- ```bash https://github.com/tonykalalian/gym.git
-2.  git clone https://github.com/tonykalalian/gym.git
-  ### Install dependencies:
-3.  cd fitness-blog
+
+```bash
+2.  git clone https://github.com/tonykalalian/Fitness-Blog-Web-Application.git
+ ### Install dependencies:
+3.  cd Fitness-Blog-Web-Application
 4.npm install
 ### Set up environment variables:
 5.Create a .env file in the root directory of the project.
 6.Define the following variables in the .env file:
-7.PORT=xxxx
+7.PORT=4000
 8.MONGODB_URI=<your-mongodb-connection-url>
 
 ###Start the server:
-  npm start
-  --------------------------------------------------------------------------------------------------------------------
+ 9.nodemon start
+ --------------------------------------------------------------------------------------------------------------------
 Usage
 Register a new account or log in if you already have an account.
 Browse the different body parts to view related posts.
@@ -60,3 +63,4 @@ EJS for the templating engine.
 MongoDB for the NoSQL database.
 Contact
 For any inquiries or questions, you can reach out to me at tkalalian@gmail.com
+```
