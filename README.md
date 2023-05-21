@@ -29,7 +29,7 @@ This is a web application for a fitness blog that provides information and resou
 ### Installation
 1. Clone the repository:
  ```bash https://github.com/tonykalalian/gym.git
-  git clone https://github.com/tonykalalian/gym.git
+2.  git clone https://github.com/tonykalalian/gym.git
   ### Install dependencies:
 3.  cd fitness-blog
 4.npm install
