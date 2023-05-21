@@ -11,6 +11,7 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.use("/auth", authRoutes);
+// =============ALL MODELS FOR MUSCLES==============
 const ChestPost = require("./models/ChestPost");
 const AbsPost = require("./models/AbsPost");
 const AdductorsPost = require("./models/AdductorsPost");
@@ -25,7 +26,6 @@ const QuadsPost = require("./models/QuadsPost");
 const TricepsPost = require("./models/TricepsPost");
 const ObliquesPost = require("./models/ObliquesPost");
 const GlutesPost = require("./models/GlutesPost");
-
 mongoose
   .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
@@ -190,6 +190,13 @@ mongoose
         res.status(500).json({ error: "An error occurred" });
       }
     });
+    app.get("/food", (req, res) => {
+      res.render("food");
+    });
+    app.get("/diet", (req, res) => {
+      res.render("diet");
+    });
+
     app.listen(port, () => {
       console.log(`Server is running on port ${port}`);
     });
