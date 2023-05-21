@@ -2,41 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chest workout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <script defer src="/your-path-to-fontawesome/js/v4-shims.js"></script>
+    <!-- =============== CSS =============== -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <title>Chest workout</title>
 
-    <link rel="stylesheet" href="css/exercise.css" />
+    <!-- =============== FAVICON =============== -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images\icons8-gym-ios-16-glyph-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images\icons8-gym-ios-16-glyph-16.png"
+    />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/exercise.css" />
   </head>
   <body>
-      <div class="blog-posts-container">
-    <% posts.forEach(function(post) { %>
-    <div class="post">
-      <a href="<%= post.postLink %>" class="post-link"></a>
-      <div class="thumbnail">
-        <img src="<%= post.thumbUrl %>" alt="" />
+    <header class="header" id="header">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
       </div>
-
-      <div class="title-container">
-        <a href="<%= post.categoryLink %>" class="category"><%= post.category %></a>
-        <a href="<%= post.postLink %>">
-          <h2 class="title"><%= post.title %></h2>
-        </a>
+      <nav class="nav container">
+        <a href="plans" class="nav__logo">Be<span id="bold">FIT</span></a>
+      </nav>
+    </header>
+    <div class="blog-posts-container">
+      <% posts.forEach(function(post) { %>
+      <div class="post">
+        <a href="<%= post.postLink %>" class="post-link"></a>
+        <div class="thumbnail">
+          <img src="<%= post.thumbUrl %>" alt="" />
+        </div>
+        <div class="title-container">
+          <a href="<%= post.categoryLink %>" class="category"
+            ><%= post.category %></a
+          >
+          <a href="<%= post.postLink %>">
+            <h2 class="title"><%= post.title %></h2>
+          </a>
+        </div>
+        <div class="summary"><%= post.summary %></div>
+        <div class="meta-data">
+          <div class="author">By <%= post.author %></div>
+          <div class="date">on <%= post.datePublished %></div>
+        </div>
       </div>
-
-      <div class="summary">
-        <%= post.summary %>
-      </div>
-
-      <div class="meta-data">
-        <div class="author">By <%= post.author %></div>
-        <div class="date">on <%= post.datePublished %></div>
-      </div>
+      <% }) %>
     </div>
-    <% }) %>
-  </div>
-
-    <script src="js/main.js"></script>
-  </body>
-</html>
+    <%- include("partials/footer") -%>
