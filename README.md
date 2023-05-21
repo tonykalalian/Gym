@@ -27,9 +27,10 @@ This is a web application for a fitness blog that provides information and resou
 - MongoDB (version X.X.X)
 
 ### Installation
-
 1. Clone the repository:
-https://github.com/tonykalalian/gym.git
+
+   https://github.com/tonykalalian/gym.git
+   git clone https://github.com/tonykalalian/gym.git
   ### Install dependencies:
 3.  cd fitness-blog
 4.npm install
