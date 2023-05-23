@@ -1,0 +1,66 @@
+[{
+  "_id": {
+    "$oid": "6467dd25d249ee11f4021948"
+  },
+  "thumbUrl": "images/exercises/abs/1.jpg",
+  "postLink": "",
+  "category": "Fitness",
+  "categoryLink": "",
+  "title": "Abs Workout",
+  "summary": "This is a summary of the chest workout.",
+  "author": "Tony",
+  "datePublished": "20",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467dd25d249ee11f402195f"
+  },
+  "thumbUrl": "images/exercises/abs/2.jpg",
+  "postLink": "",
+  "category": "Fitness",
+  "categoryLink": "",
+  "title": "Chest Workout",
+  "summary": "This is a summary of the chest workout.",
+  "author": "Tony",
+  "datePublished": "20",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467dd25d249ee11f4021971"
+  },
+  "thumbUrl": "images/exercises/abs/3.jpg",
+  "postLink": "",
+  "category": "Fitness",
+  "categoryLink": "",
+  "title": "Chest Workout",
+  "summary": "This is a summary of the chest workout.",
+  "author": "Tony",
+  "datePublished": "20",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467dd25d249ee11f4021987"
+  },
+  "thumbUrl": "images/exercises/abs/4.jpg",
+  "postLink": "",
+  "category": "Fitness",
+  "categoryLink": "",
+  "title": "Chest Workout",
+  "summary": "This is a summary of the chest workout.",
+  "author": "Tony",
+  "datePublished": "20",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467dd25d249ee11f4021999"
+  },
+  "thumbUrl": "images/exercises/abs/5.jpg",
+  "postLink": "",
+  "category": "Fitness",
+  "categoryLink": "",
+  "title": "Chest Workout",
+  "summary": "This is a summary of the chest workout.",
+  "author": "Tony",
+  "datePublished": "20",
+  "__v": 0
+}]

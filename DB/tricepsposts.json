@@ -1,0 +1,114 @@
+[
+  {
+    "_id": {
+      "$oid": "6467dd25d249ee11f4021940"
+    },
+    "thumbUrl": "images/exercises/triceps/1.jpg",
+    "postLink": "",
+    "category": "Fitness",
+    "categoryLink": "",
+    "title": "Chest Workout",
+    "summary": "This is a summary of the chest workout.",
+    "author": "Tony",
+    "datePublished": "20",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6467dd25d249ee11f4021957"
+    },
+    "thumbUrl": "images/exercises/triceps/2.jpg",
+    "postLink": "",
+    "category": "Fitness",
+    "categoryLink": "",
+    "title": "Chest Workout",
+    "summary": "This is a summary of the chest workout.",
+    "author": "Tony",
+    "datePublished": "20",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6467dd25d249ee11f4021969"
+    },
+    "thumbUrl": "images/exercises/triceps/3.jpg",
+    "postLink": "",
+    "category": "Fitness",
+    "categoryLink": "",
+    "title": "Chest Workout",
+    "summary": "This is a summary of the chest workout.",
+    "author": "Tony",
+    "datePublished": "20",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6467dd25d249ee11f402197b"
+    },
+    "thumbUrl": "images/exercises/triceps/4.jpg",
+    "postLink": "",
+    "category": "Fitness",
+    "categoryLink": "",
+    "title": "Chest Workout",
+    "summary": "This is a summary of the chest workout.",
+    "author": "Tony",
+    "datePublished": "20",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6467dd25d249ee11f4021991"
+    },
+    "thumbUrl": "images/exercises/triceps/5.jpg",
+    "postLink": "",
+    "category": "Fitness",
+    "categoryLink": "",
+    "title": "Chest Workout",
+    "summary": "This is a summary of the chest workout.",
+    "author": "Tony",
+    "datePublished": "20",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6467dd25d249ee11f402199f"
+    },
+    "thumbUrl": "images/exercises/triceps/6.jpg",
+    "postLink": "",
+    "category": "Fitness",
+    "categoryLink": "",
+    "title": "Chest Workout",
+    "summary": "This is a summary of the chest workout.",
+    "author": "Tony",
+    "datePublished": "20",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6467dd25d249ee11f40219a7"
+    },
+    "thumbUrl": "images/exercises/triceps/7.jpg",
+    "postLink": "",
+    "category": "Fitness",
+    "categoryLink": "",
+    "title": "Chest Workout",
+    "summary": "This is a summary of the chest workout.",
+    "author": "Tony",
+    "datePublished": "20",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6467dd25d249ee11f40219ab"
+    },
+    "thumbUrl": "images/exercises/triceps/8.jpg",
+    "postLink": "",
+    "category": "Fitness",
+    "categoryLink": "",
+    "title": "Chest Workout",
+    "summary": "This is a summary of the chest workout.",
+    "author": "Tony",
+    "datePublished": "20",
+    "__v": 0
+  }
+]

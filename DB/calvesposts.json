@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "6467dd25d249ee11f402193c"
+  },
+  "thumbUrl": "images/exercises/calves/1.jpg",
+  "postLink": "",
+  "category": "Fitness",
+  "categoryLink": "",
+  "title": "Chest Workout",
+  "summary": "This is a summary of the chest workout.",
+  "author": "Tony",
+  "datePublished": "20",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467dd25d249ee11f4021981"
+  },
+  "thumbUrl": "images/exercises/calves/2.jpg",
+  "postLink": "",
+  "category": "Fitness",
+  "categoryLink": "",
+  "title": "Chest Workout",
+  "summary": "This is a summary of the chest workout.",
+  "author": "Tony",
+  "datePublished": "20",
+  "__v": 0
+}]

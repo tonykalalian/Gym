@@ -1,0 +1,92 @@
+[{
+  "_id": {
+    "$oid": "6467dd25d249ee11f4021936"
+  },
+  "thumbUrl": "images/exercises/chest/1.jpg",
+  "postLink": "",
+  "category": "Fitness",
+  "categoryLink": "",
+  "title": "Chest Workout",
+  "summary": "This is a summary of the chest workout.",
+  "author": "Tony",
+  "datePublished": "20",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467dd25d249ee11f402194f"
+  },
+  "thumbUrl": "images/exercises/chest/2.jpg",
+  "postLink": "",
+  "category": "Fitness",
+  "categoryLink": "",
+  "title": "Chest Workout",
+  "summary": "This is a summary of the chest workout.",
+  "author": "Tony",
+  "datePublished": "20",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467dd25d249ee11f4021963"
+  },
+  "thumbUrl": "images/exercises/chest/3.jpg",
+  "postLink": "",
+  "category": "Fitness",
+  "categoryLink": "",
+  "title": "Chest Workout",
+  "summary": "This is a summary of the chest workout.",
+  "author": "Tony",
+  "datePublished": "20",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467dd25d249ee11f4021975"
+  },
+  "thumbUrl": "images/exercises/chest/4.jpg",
+  "postLink": "",
+  "category": "Fitness",
+  "categoryLink": "",
+  "title": "Chest Workout",
+  "summary": "This is a summary of the chest workout.",
+  "author": "Tony",
+  "datePublished": "20",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467dd25d249ee11f40219b1"
+  },
+  "thumbUrl": "images/exercises/chest/5.jpg",
+  "postLink": "",
+  "category": "Fitness",
+  "categoryLink": "",
+  "title": "Chest Workout",
+  "summary": "This is a summary of the chest workout.",
+  "author": "Tony",
+  "datePublished": "20",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467dd25d249ee11f40219b5"
+  },
+  "thumbUrl": "images/exercises/chest/6.jpg",
+  "postLink": "",
+  "category": "Fitness",
+  "categoryLink": "",
+  "title": "Chest Workout",
+  "summary": "This is a summary of the chest workout.",
+  "author": "Tony",
+  "datePublished": "20",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6467dd25d249ee11f40219b9"
+  },
+  "thumbUrl": "images/exercises/chest/7.jpg",
+  "postLink": "",
+  "category": "Fitness",
+  "categoryLink": "",
+  "title": "Chest Workout",
+  "summary": "This is a summary of the chest workout.",
+  "author": "Tony",
+  "datePublished": "20",
+  "__v": 0
+}]
