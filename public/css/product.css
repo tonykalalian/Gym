@@ -29,7 +29,7 @@ ul > a:hover,
 .fa-brands:hover,
 li:hover,
 .fa-circle-xmark:hover {
-  color: var(--container-70-opacity);
+  color: black;
 }
 
 i {
@@ -57,7 +57,7 @@ button {
 }
 
 button:hover {
-  background: var(--container-30-opacity);
+  background: grey;
 }
 
 nav {
@@ -132,7 +132,7 @@ nav {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--container-70-opacity);
+  background: black;
 }
 
 ::-webkit-scrollbar-corner {
@@ -437,7 +437,7 @@ main {
 
 .fa-instagram:hover {
   background-image: none;
-  background-color: var(--container-70-opacity);
+  background-color: black;
 }
 
 .fa-facebook {
