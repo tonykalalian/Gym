@@ -11,4 +11,4 @@ const glutesPostSchema = new mongoose.Schema({
   datePublished: String,
 });
 const GlutesPost = mongoose.model("GlutesPost", glutesPostSchema);
-module.export = GlutesPost;
+module.exports = GlutesPost;

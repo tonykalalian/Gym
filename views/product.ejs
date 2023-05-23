@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/product.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <i class="fa-solid fa-bars"></i>
+        <h1>Be Fit</h1>
+        <div class="nav-right">
+          <div class="search-and-cart">
+            <i class="fa-solid fa-cart-shopping">
+              <div class="cart-red-dot"></div>
+            </i>
+            <h4 class="cart-notification">
+              Product successfully added to cart
+            </h4>
+          </div>
+          <div class="cart-modal-overlay">
+            <div class="cart-modal">
+              <h3 class="no-item-message">Your cart is empty.</h3>
+              <i class="close-cart-modal fa-regular fa-circle-xmark"></i>
+              <!-- INSERT PRODUCT HERE -->
+              <div class="cart-modal-bottom">
+                <div class="total-price">
+                  <h4>Total amount: <span>$0</span></h4>
+                </div>
+                <div>
+                  <button class="continue-shopping">Continue Shopping</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="toggle-theme">
+            <div class="toggler"></div>
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+          </div>
+        </div>
+        <div></div>
+      </nav>
+    </header>
+    <main>
+      <section class="product-by-category">
+        <h2 class="heading">Products By Category</h2>
+        <ul class="product-categories">
+          <li>Wheys</li>
+          <li>Creatine</li>
+          <li>PreWorkout</li>
+          <li>Multivitamins</li>
+        </ul>
+        <div class="category-product">
+          <!-- INSERT PRODUCT HERE -->
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="js/product.js"></script>
+</html>

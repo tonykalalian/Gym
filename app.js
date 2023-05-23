@@ -196,6 +196,9 @@ mongoose
     app.get("/diet", (req, res) => {
       res.render("diet");
     });
+    app.get("/product", (req, res) => {
+      res.render("product");
+    });
 
     app.listen(port, () => {
       console.log(`Server is running on port ${port}`);
