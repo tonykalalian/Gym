@@ -165,7 +165,7 @@ const renderCategoryProduct = (selectedCategory) => {
     // Using switch/case instead of if/else so it's easier to read
     switch (selectedCategory) {
       // If the selected category is 'Headsets;
-      case "Wheys":
+      case "Whey":
         // Display products that are under the category of 'headset'
         newProductContainer.children[0].getAttribute("data-category") ===
           "whey" &&
