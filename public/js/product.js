@@ -411,7 +411,7 @@ btn.addEventListener("click", () => {
   document.documentElement.classList.toggle("checked-out");
 
   setTimeout(() => {
-    window.open("checkout");
+    window.location.replace("checkout");
   }, 2000); // 2000 milliseconds = 2 seconds
 });
 const back_to_home = document
