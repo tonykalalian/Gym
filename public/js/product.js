@@ -404,3 +404,18 @@ window.onload = () => {
     renderAllProduct();
   }
 };
+
+const btn = document.querySelector(".checkout");
+
+btn.addEventListener("click", () => {
+  document.documentElement.classList.toggle("checked-out");
+
+  setTimeout(() => {
+    window.open("checkout");
+  }, 2000); // 2000 milliseconds = 2 seconds
+});
+const back_to_home = document
+  .querySelector(".backhome")
+  .addEventListener("click", () => {
+    window.location.replace("home");
+  });

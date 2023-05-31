@@ -3,6 +3,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const authRoutes = require("./routes/auth");
+const request = require("request");
+const https = require("https");
+const { url } = require("inspector");
 const app = express();
 const port = process.env.PORT;
 app.use(express.json());
@@ -199,7 +202,52 @@ mongoose
     app.get("/product", (req, res) => {
       res.render("product");
     });
+    app.get("/checkout", (req, res) => {
+      res.render("checkout");
+    });
+    app.get("/team", (req, res) => {
+      res.render("team");
+    });
+    app.post("/news", (req, res) => {
+      const fname = req.body.fname;
+      const lname = req.body.lname;
+      const email = req.body.email;
+      let data = {
+        members: [
+          {
+            email_address: req.body.email,
+            status: "subscribed",
+            merge_fields: {
+              FNAME: fname,
+              LNAME: lname,
+            },
+          },
+        ],
+      };
+      const jsonData = JSON.stringify(data);
+      const url = "https://us21.api.mailchimp.com/3.0/lists/042f5c95d7";
 
+      const options = {
+        method: "POST",
+        auth: "tony:51d6528c6b78919d123fdd00fc3bbc70-us21",
+      };
+      const request = https.request(url, options, (response) => {
+        if (response.statusCode === 200) {
+          res.render("success");
+        } else {
+          res.render("failure");
+        }
+        response.on("data", (data) => {
+          console.log(JSON.parse(data));
+        });
+      });
+
+      request.write(jsonData);
+      request.end();
+    });
+    app.post("/failure", (req, res) => {
+      res.redirect("/news");
+    });
     app.listen(port, () => {
       console.log(`Server is running on port ${port}`);
     });
