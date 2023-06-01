@@ -2,6 +2,7 @@
 const StorageCtrl = (function () {
   // public methods
   return {
+    // Stores an item in the local storage
     storeItem: function (item) {
       let items;
       //check if any items in local storage
@@ -17,6 +18,7 @@ const StorageCtrl = (function () {
         localStorage.setItem("items", JSON.stringify(items));
       }
     },
+    // Retrieves items from the local storage
     getItemFromStorage: function () {
       let items;
       if (localStorage.getItem("items") === null) {
@@ -26,6 +28,7 @@ const StorageCtrl = (function () {
       }
       return items;
     },
+    // Updates an item in the local storage
     updateItemStorage: function (updatedItem) {
       let items = JSON.parse(localStorage.getItem("items"));
       items.forEach((item, index) => {
@@ -35,6 +38,7 @@ const StorageCtrl = (function () {
       });
       localStorage.setItem("items", JSON.stringify(items));
     },
+    // Deletes an item from the local storage
     deleteItemStorage: function (itemToDeleteID) {
       let items = JSON.parse(localStorage.getItem("items"));
       items.forEach((item, index) => {
@@ -44,49 +48,56 @@ const StorageCtrl = (function () {
       });
       localStorage.setItem("items", JSON.stringify(items));
     },
+    // Removes all items from the local storage
     removeAllItems: function () {
       localStorage.removeItem("items");
     },
   };
 })();
 
-//Iten Controller
+//Item Controller
 const ItemCtrl = (function () {
   //item Constructor
   const Item = function (name, calories) {
     this.id = id.next().value;
     this.calories = calories;
     this.name = name;
+    // The item constructor function creates new item objects with properties like name and calories
   };
 
   function* genID() {
     let id = 1;
     while (true) {
       yield id++;
+      // Generator function that generates unique IDs for items
     }
   }
-  const id = genID();
+  const id = genID(); // Generate a new ID
 
   // Data Structure / State
   const data = {
-    items: StorageCtrl.getItemFromStorage(),
+    items: StorageCtrl.getItemFromStorage(), // Retrieve items from local storage
     currentItem: null,
     totalCalories: 0,
   };
 
   //public methods
   return {
+    // Retrieves all items
     getItems: function () {
       return data.items;
     },
+    // Logs the current data state
     logData: function () {
       return data;
     },
+    // Adds a new item
     addItem: function (name, calories) {
       const newItem = new Item(name, parseInt(calories));
       data.items.push(newItem);
       return newItem;
     },
+    // Calculates the total calories
     getTotCalories: function () {
       let cal = 0;
       data.items.forEach((item) => {
@@ -95,6 +106,7 @@ const ItemCtrl = (function () {
       data.totalCalories = cal;
       return data.totalCalories;
     },
+    // Retrieves an item by its ID
     getItemByID: function (id) {
       let found = null;
       data.items.forEach((item) => {
@@ -104,6 +116,7 @@ const ItemCtrl = (function () {
       });
       return found;
     },
+    // Updates an item by its ID
     updateItemByID: function (id, name, calories) {
       let updatedItem = null;
       data.items.forEach((item) => {
@@ -115,12 +128,15 @@ const ItemCtrl = (function () {
       });
       return updatedItem;
     },
+    // Sets the current item
     setCurrentItem: function (item) {
       data.currentItem = item;
     },
+    // Retrieves the current item
     getCurrentItem: function () {
       return data.currentItem;
     },
+    // Marks an item to be deleted
     itemToBeDeleted: function (id) {
       //Get ids;
       const ids = data.items.map((item) => {
@@ -128,9 +144,10 @@ const ItemCtrl = (function () {
       });
       const index = ids.indexOf(id);
 
-      //Remove itme
+      //Remove item
       data.items.splice(index, 1);
     },
+    // Clears all items
     clearAllItems: function () {
       data.items = [];
     },
@@ -155,6 +172,7 @@ const UICrtl = (function () {
   // public method
   return {
     populateItemList: function (items) {
+      // Populates the item list in the UI
       let html = "";
       items.forEach((item) => {
         html += `<li class="collection-item" id="item-${item.id}">
@@ -164,6 +182,7 @@ const UICrtl = (function () {
       });
       document.querySelector(UISelectors.itemList).innerHTML = html;
     },
+    // Clears the edit state in the UI
     clearEditState: function () {
       UICrtl.clearInputs();
       document.querySelector(UISelectors.updateBtn).style.display = "none";
@@ -171,21 +190,25 @@ const UICrtl = (function () {
       document.querySelector(UISelectors.backBtn).style.display = "none";
       document.querySelector(UISelectors.addBtn).style.display = "inline";
     },
+    // Shows the edit state in the UI
     showEditState: function () {
       document.querySelector(UISelectors.updateBtn).style.display = "inline";
       document.querySelector(UISelectors.deleteBtn).style.display = "inline";
       document.querySelector(UISelectors.backBtn).style.display = "inline";
       document.querySelector(UISelectors.addBtn).style.display = "none";
     },
+    // Retrieves selectors from the UI
     getSelectors: function () {
       return UISelectors;
     },
+    // Retrieves input values from the UI
     getItemInput: function () {
       return {
         name: document.querySelector(UISelectors.itemNameInput).value,
         calories: document.querySelector(UISelectors.itemCaloriesInput).value,
       };
     },
+    // Adds a new item to the UI list
     addListItem(item) {
       const li = document.createElement("li");
       li.className = "collection-item";
@@ -198,16 +221,20 @@ const UICrtl = (function () {
         .querySelector(UISelectors.itemList)
         .insertAdjacentElement("beforeend", li);
     },
+    // Clears the input fields in the UI
     clearInputs: function () {
       document.querySelector(UISelectors.itemNameInput).value = "";
       document.querySelector(UISelectors.itemCaloriesInput).value = "";
     },
+    // Updates the status list in the UI
     statusList: function (status) {
       document.querySelector(UISelectors.itemList).style.display = status;
     },
+    // Updates the total calories in the UI
     updateTotCalories: function (totalCal) {
       document.querySelector(UISelectors.totalCalories).innerHTML = totalCal;
     },
+    // Adds the current item to the form for editing
     addItemToForm: function () {
       const currentItem = ItemCtrl.getCurrentItem();
       document.querySelector(UISelectors.itemNameInput).value =
@@ -216,6 +243,7 @@ const UICrtl = (function () {
         currentItem.calories;
       UICrtl.showEditState();
     },
+    // Updates an item in the UI list
     updateListItem: function (item) {
       const listItems = document.querySelectorAll("#item-list li");
       const listItemsConvert = Array.from(listItems);
@@ -443,3 +471,4 @@ const App = (function (ItemCtrl, StorageCtrl, UICrtl) {
 
 //Initilizing App
 App.init();
+// Overall, this code follows a Model-View-Controller (MVC) architectural pattern, where StorageCtrl acts as the model, ItemCtrl represents the controller, and UICtrl represents the view.
