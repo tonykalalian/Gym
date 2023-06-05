@@ -24,8 +24,8 @@ This is a web application for a fitness blog that provides information and resou
 
 ### Prerequisites
 
-- Node.js (version X.X.X)
-- MongoDB (version X.X.X)
+- Node.js v18.15.0
+- MongoDB version: "6.0.5"
 
 ### Installation
 
@@ -41,10 +41,10 @@ This is a web application for a fitness blog that provides information and resou
 5.Create a .env file in the root directory of the project.
 6.Define the following variables in the .env file:
 7.PORT=4000
-8.MONGODB_URI=<your-mongodb-connection-url>
-
+8.MONGODB_URI=<your-mongodb-connection-url><your-mongodb-atlas-cluster>
+9.Mailchimp API key and Mailchiml List id
 ###Start the server:
- 9.nodemon start
+ 9.nodemon start/npm start
  --------------------------------------------------------------------------------------------------------------------
 Usage
 Register a new account or log in if you already have an account.
