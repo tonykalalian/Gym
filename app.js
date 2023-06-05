@@ -225,11 +225,11 @@ mongoose
         ],
       };
       const jsonData = JSON.stringify(data);
-      const url = "https://us21.api.mailchimp.com/3.0/lists/042f5c95d7";
+      const url = process.env.URL;
 
       const options = {
         method: "POST",
-        auth: "tony:51d6528c6b78919d123fdd00fc3bbc70-us21",
+        auth: process.env.LIST,
       };
       const request = https.request(url, options, (response) => {
         if (response.statusCode === 200) {
