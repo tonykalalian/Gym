@@ -42,7 +42,7 @@ This is a web application for a fitness blog that provides information and resou
 6.Define the following variables in the .env file:
 7.PORT=4000
 8.MONGODB_URI=<your-mongodb-connection-url><your-mongodb-atlas-cluster>
-
+9.Mailchimp API key and Mailchiml List id
 ###Start the server:
  9.nodemon start/npm start
  --------------------------------------------------------------------------------------------------------------------
