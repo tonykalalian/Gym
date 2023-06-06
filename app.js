@@ -27,19 +27,6 @@ mongoose
   .then(() => {
     console.log("Connected to MongoDB");
 
-    // Helper function to save posts to the database
-    const savePostsToDB = async (model, posts) => {
-      try {
-        await model.deleteMany({});
-        for (const post of posts) {
-          await model.create(post);
-        }
-        console.log("Posts saved to the database successfully!");
-      } catch (error) {
-        console.error("Error saving posts to the database", error);
-      }
-    };
-
     // Routes
     app.get("/home", (req, res) => {
       res.render("home");
