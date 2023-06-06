@@ -105,7 +105,7 @@ mongoose
     app.post("/news", (req, res) => {
       const fname = req.body.fname;
       const lname = req.body.lname;
-      const email = req.body.email;
+/*const email = req.body.email;/
       let data = {
         members: [
           {
