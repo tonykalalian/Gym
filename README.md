@@ -56,7 +56,7 @@ Welcome to the Fitness Blog Web Application! This web application is your go-to 
 4. Start the server:
 
     ```bash
-    nodemon start/npm start
+    nodemon app.js/npm start
     ```
 
 ## Usage
