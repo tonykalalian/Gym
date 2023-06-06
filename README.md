@@ -1,8 +1,8 @@
-# Fitness Blog Web Application
+# 🏋️Fitness Blog Web Application🏋️
 
 Welcome to the Fitness Blog Web Application! This web application is your go-to resource for all things fitness, providing valuable information and resources related to various body parts and exercises. Whether you're looking to strengthen your chest, sculpt your abs, or build strong biceps, we've got you covered!
 
-## Features
+## 📚Features
 
 - User authentication and registration
 - View posts related to different body parts
@@ -11,7 +11,7 @@ Welcome to the Fitness Blog Web Application! This web application is your go-to 
 - EJS templates for dynamic HTML rendering
 - Express server for handling requests
 
-## Technologies Used
+## 🚀Technologies Used
 
 - Node.js
 - Express.js
@@ -66,11 +66,11 @@ Welcome to the Fitness Blog Web Application! This web application is your go-to 
 - Explore the fitness plans and tools available on the site.
 - Customize the application as per your requirements.
 
-## Contributing
+## 🤝Contributing
 
 Contributions are welcome! If you have any ideas, suggestions, or bug fixes, please open an issue or submit a pull request.
 
-## License
+## 📄License
 
 This project is licensed under the MIT License.
 
@@ -81,7 +81,7 @@ This project is licensed under the MIT License.
 - EJS for the templating engine.
 - MongoDB for the NoSQL database.
 
-## Contact
+## 📧Contact
 
 For any inquiries or questions, you can reach out to me at tkalalian@gmail.com.
 
