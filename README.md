@@ -1,3 +1,11 @@
+# Preview Images
+![1](https://github.com/tonykalalian/Fitness-Blog-Web-Application/assets/120026287/07ba18d1-54e2-4934-818a-79dae2c41804)
+![2](https://github.com/tonykalalian/Fitness-Blog-Web-Application/assets/120026287/b9436184-b1a8-441b-8402-63f62d42e0cd)
+![3](https://github.com/tonykalalian/Fitness-Blog-Web-Application/assets/120026287/0f6ff455-2ff0-46dc-8da1-460a36761de5)
+![4](https://github.com/tonykalalian/Fitness-Blog-Web-Application/assets/120026287/3fede760-26a8-4f2a-b5a1-362ab8eae498)
+![5](https://github.com/tonykalalian/Fitness-Blog-Web-Application/assets/120026287/c5d2b92d-7321-4261-8049-d08578c5f419)
+![6](https://github.com/tonykalalian/Fitness-Blog-Web-Application/assets/120026287/30f4730a-94ba-42ba-81a0-ef048f7775a4)
+
 # 🏋️Fitness Blog Web Application🏋️
 
 Welcome to the Fitness Blog Web Application! This web application is your go-to resource for all things fitness, providing valuable information and resources related to various body parts and exercises. Whether you're looking to strengthen your chest, sculpt your abs, or build strong biceps, we've got you covered!
