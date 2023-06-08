@@ -50,7 +50,7 @@ Welcome to the Fitness Blog Web Application! This web application is your go-to 
         ```bash
         PORT=4000
         MONGODB_URI=<your-mongodb-connection-url><your-mongodb-atlas-cluster>
-        Mailchimp API key and Mailchiml List id
+        Mailchimp API key and Mailchimp List id
         ```
 
 4. Start the server:
