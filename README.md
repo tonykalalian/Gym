@@ -94,4 +94,3 @@ This project is licensed under the MIT License.
 For any inquiries or questions, you can reach out to me at tkalalian@gmail.com.
 
 [![DeepScan grade](https://deepscan.io/api/teams/21387/projects/24807/branches/767480/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=21387&pid=24807&bid=767480)
-[![Node.js Package](https://github.com/tonykalalian/Fitness-Blog-Web-Application/actions/workflows/npm-publish.yml/badge.svg?branch=main)](https://github.com/tonykalalian/Fitness-Blog-Web-Application/actions/workflows/npm-publish.yml)
